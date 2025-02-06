@@ -1,0 +1,166 @@
+.main-center-input {
+    margin-top: 25vh;
+    height: 200px;
+}
+
+.main-title-dashboard {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 64px;
+}
+
+.landingpage-search-bar {
+    width: 760px;
+    background-color: #434343;
+    border: solid 1px #FFFFFF;
+    color: #FFFFFF;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.landingpage-search-text-bar {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.landingpage-search-file-bar {
+    height: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+
+.dashboard-buttonGroup { 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 23px;
+    column-gap: 57px;
+    margin-top: 66px;
+    justify-content: center;
+}
+
+.dashboard-main-button {
+    background-color: #1E1E1E;
+    border: solid 1px #434343;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-start;
+    padding-left: 15px;
+    gap: 10px;
+    align-items: center;
+    width: 320px;
+    height: 59px;
+    border-radius: 16px;
+}
+
+.dashboard-main-button {
+    background-color: #1E1E1E;
+    border: solid 1px #434343;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 320px;
+    height: 59px;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-main-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    background-color: #434343;
+}
+
+.dashboard-main-button svg {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    stroke: #E6A000;
+}
+
+.dashboard-main-button div {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.landingPage-searchChattingBar{
+    position: relative;
+    left: 50%;
+}
+
+
+.messages::-webkit-scrollbar {
+    width: 10px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+    border: 3px solid #f1f1f1; /* Adds space around the thumb */
+}
+
+.messages::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the track */
+    border-radius: 10px;
+}
+
+.landingPage-chatContainer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-bottom: 80px;
+}
+
+.fixed-input-bar {
+    position: fixed;
+    left: 50%;
+    bottom: 200px;
+    transition: transform 0.3s ease;
+}
+
+.homepage-massages {
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px;
+    width: 80%;
+    top: 40px;
+    left: 58%;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+    transform: translateX(-50%);
+    font-size: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #45a049;
+}

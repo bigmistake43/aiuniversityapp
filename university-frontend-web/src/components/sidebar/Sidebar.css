@@ -1,0 +1,207 @@
+/* Sidebar General Styles */
+.sidebar {
+    background-color: #1E1E1E;
+    width: 261px;
+    height: 100%;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.sidebar:hover {
+    background-color: #232323;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Logo Styling */
+.dash-logo-img {
+    width: 135px;
+    height: 47px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.dash-logo-img:hover {
+    transform: scale(1.1);
+}
+
+.dash-logo-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+/* New Chat Button */
+.newchat-button-sidebar {
+    width: 244px;
+    height: 45px;
+    border-radius: 6px;
+    border: solid 1px #444654;
+    background-color: #1E1E1E;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 17px;
+    gap: 16px;
+    font-size: 13.5px;
+    font-weight: 900;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin: auto;
+}
+
+.newchat-button-sidebar:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation Menu */
+.nav {
+    width: 100%;
+    padding: 20px;
+    font-size: 13.5px;
+    font-weight: 900;
+    line-height: 27px;
+    color: #ffffff;
+}
+
+.navlists {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0px;
+}
+
+.navlist {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: #abadbe;
+}
+
+.navlist:hover {
+    background-color: #333333;
+    color: #1abc9c;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #333333;
+    border-radius: 6px;
+    transition: max-height 0.5s ease, padding 0.3s ease;
+    padding: 0;
+}
+
+.dropdown-item {
+    background: none;
+    border: none;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #495b75;
+    padding-left: 20px;
+}
+
+.dropdown h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ddd;
+}
+
+/* Footer Styles */
+.sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 224px;
+    margin: auto;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    z-index: 1000;
+}
+
+.breakline {
+    border: solid 1px #444654;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Sidebar Footer Button */
+.sidebar-footer-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-weight: 900;
+    font-size: 13.5px;
+    line-height: 27px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.sidebar-footer-button:hover {
+    color: #1abc9c;
+    transform: translateY(-2px);
+}
+
+/* Hover Effect on Dropdown Items */
+.newchat-button-sidebar .dropdown-item,
+.dropdown-item {
+    transition: transform 0.2s ease;
+}
+
+.newchat-button-sidebar .dropdown-item:hover,
+.dropdown-item:hover {
+    transform: translateX(10px);
+}
+
+/* Smooth Dropdown Transitions */
+.sidebar .dropdown {
+    padding: 10px;
+    max-height: 30vh;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+    overflow: auto;
+}
+
+.sidebar .dropdown.open {
+    max-height: 30vh;
+    padding: 10px;
+}
+
+.icon-text-navlist {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sidebar-header {
+    max-height: 70vh;
+    overflow: auto;
+}

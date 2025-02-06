@@ -1,0 +1,12 @@
+.ProgressBarOutRect {
+    width: 279px;
+    height: 68px;
+    background-color: #B2B2B2;
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+    border-radius: 16px;
+    padding-left: 26px;
+    padding-top: 16px;
+}

@@ -1,0 +1,101 @@
+.signin {
+    margin-top: 20px;
+}
+
+.signin-form {
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.terms-container {
+    margin-top: 15px;
+}
+
+.signin-input-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.terms-container {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.terms-label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+}
+
+.terms-checkbox {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #E5A000;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Smooth effects */
+}
+
+.terms-checkbox:checked {
+    background-color: #E5A000;
+    transform: scale(1.1);
+    /* Slight scale effect when checked */
+}
+
+.terms-checkbox:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(229, 160, 0, 0.5);
+    /* Focus effect */
+}
+
+.terms-link {
+    color: #E5A000;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.terms-link:hover {
+    color: #d48a00;
+    /* Darker shade when hovered */
+    text-decoration: underline;
+    /* Underline effect on hover */
+}
+
+.errormessage {
+    color: red;
+    font-size: 12px;
+    margin-top: 0px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.signin-form-text-button-group {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.signin-to-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}

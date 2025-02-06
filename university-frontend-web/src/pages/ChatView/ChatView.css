@@ -1,0 +1,474 @@
+.landingpage-search-bar {
+    width: 100%;
+    background-color: #2c2c2c;
+    border: solid 1px #FFFFFF;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.landingpage-search-bar:hover {
+    background-color: #434343;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-input {
+    flex-grow: 1;
+    height: 100%;
+    border: none;
+    background: transparent;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    resize: none;
+    outline: none;
+}
+
+.sending-icon {
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+}
+
+.sending-icon:hover {
+    transform: scale(1.2);
+}
+
+.attaching-icon {
+    cursor: pointer;
+    transition: transform 0.3s ease, fill 0.3s ease;
+    transform-origin: center;
+}
+
+.attaching-icon:hover {
+    transform: scale(1.2);
+    fill: #555555;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-name-display {
+    color: #E6A000;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.uploaded-file {
+    position: relative;
+}
+
+.file-preview-container {
+    width: 100%;
+    position: relative;
+}
+
+.file-preview {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    left: 0px;
+    border-radius: 8px;
+    position: absolute;
+}
+
+.file-name {
+    color: white;
+    margin-left: 10px;
+}
+
+.remove-file-button {
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    background: transparent;
+    border-radius: 50%;
+    color: rgb(255 255 255);
+    font-size: 11px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: #696966;
+    padding: 0px;
+    margin: 0px;
+}
+
+.remove-file-button:hover {
+    color: #ff4d4d;
+}
+
+/* New preview container style when files are uploaded */
+.file-previews-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.uploaded-files-wrapper.show {
+    height: 50px;
+    margin-bottom: 10px;
+    transition: max-height 0.3s ease;
+}
+
+.remove-preview {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.remove-preview:hover {
+    color: red;
+}
+
+.no-session {
+    text-align: center;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.chat-window {
+    background: #1a1a1a;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 90%;
+    margin: 20px auto;
+    height: 100%;
+}
+
+.message-container {
+    max-height: calc(100vh - 260px);
+    overflow-y: auto;
+    margin-bottom: 70px;
+    background-color: #333333;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.message {
+    background-color: #444444;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.user-message {
+    background-color: #3b7dd8;
+    width: 50%;
+}
+
+.bot-message {
+    background-color: #393e42;
+    min-width: 100%;
+}
+
+.file-link {
+    display: inline-block;
+    margin-top: 5px;
+    color: #e6a000;
+    text-decoration: none;
+}
+
+.file-link:hover {
+    text-decoration: underline;
+}
+
+.chat-view {
+    width: 100%;
+    height: calc(100vh - 70px);
+}
+
+.input-container {
+    position: absolute;
+    width: 70%;
+    bottom: 50px;
+    margin: auto;
+}
+
+.image-preview {
+    width: auto;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.message-file-preview {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.chat-window-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin: 20px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Keyframes for text appearance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chat-window-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin: 20px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Keyframes for text appearance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chat-type {
+    display: inline-block;
+    background: linear-gradient(90deg, #1abc9c, #107763, #4ebb0f);
+    background-size: 200% auto;
+    color: #fff;
+    font-weight: 900;
+    padding: 5px 10px;
+    border-radius: 6px;
+    animation: colorFlow 3s linear infinite, pulse 1.5s ease-in-out infinite;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes for infinite color flow animation */
+@keyframes colorFlow {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}
+
+/* Keyframes for a pulsing effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(26, 188, 156, 0.4);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(26, 188, 156, 0.6);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(26, 188, 156, 0.4);
+    }
+}
+
+/* Optional Hover Effect */
+.chat-type:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(26, 188, 156, 0.8);
+}
+
+.loading-overlay {
+    position: absolute;
+}
+
+/* Loading Overlay */
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow: hidden;
+}
+
+/* Spinner */
+.spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.spinner div {
+    width: 60px;
+    height: 60px;
+    border: 4px solid #e6a000;
+    border-top: 4px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Sparkling Stars */
+.sparkles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.sparkle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: radial-gradient(circle, #e6a000 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    animation: float 2s ease-in-out infinite, sparkle-fade 1.5s ease-in-out infinite;
+    opacity: 0;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(10px, -20px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Sparkle Fade Animation */
+@keyframes sparkle-fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Spinner Rotation Animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Typing Animation */
+.typing-text {
+    font-size: 30px;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    animation: typing 4s steps(40, end) infinite, blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 900px;
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #fff;
+    }
+}
+
+/* Hovering Images */
+.hover-images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.hover-image {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    animation: float-images 3s ease-in-out infinite, hover-rotate 5s linear infinite;
+}
+
+@keyframes float-images {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(10px, -15px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes hover-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.message-text {
+    text-align: left;
+    padding: 5px 20px;
+}

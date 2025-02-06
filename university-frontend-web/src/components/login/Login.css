@@ -1,0 +1,276 @@
+.login {
+    width: 90%;
+}
+
+.login-text {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0;
+}
+
+.errormessage {
+    color: red;
+    font-size: 12px;
+    margin-top: 0px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.google-login-button {
+    width: 100%;
+    background-color: transparent;
+    border: solid 4px #30303D;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: space-evenly;
+    height: 50px;
+    margin: auto;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.google-login-button:hover {
+    background-color: #6b6a68;
+    border: white;
+    box-shadow: 0 4px 8px rgb(216, 219, 27);
+    transform: scale(1.05);
+    color: rgb(216, 219, 27);
+}
+
+.or-text {
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-form {
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.login-input-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.login-input {
+    width: 100%;
+    height: 50px;
+    background-color: #121212;
+    border: solid 4px #30303D;
+    border-radius: 16px;
+    padding-left: 32px;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.login-input:hover {
+    border-color: #505068;
+    background-color: #181818;
+}
+
+.login-input:focus {
+    border-color: #8d8989;
+    background-color: #1f1f1f;
+    box-shadow: 0 0 8px rgba(141, 137, 137, 0.5);
+    transform: scale(1.02);
+}
+
+.login-input::placeholder {
+    color: #555;
+    font-style: italic;
+    transition: color 0.3s ease;
+}
+
+.login-input:hover::placeholder {
+    color: #777;
+}
+
+.login-input:focus::placeholder {
+    color: transparent;
+}
+
+.login-form-button {
+    width: 95%;
+    color: white;
+    text-align: center;
+    background-color: #E5A000;
+    height: 50px;
+    font-size: 28px;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.login-form-button:hover:not(:disabled) {
+    background-color: #d48a00;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-form-button:disabled {
+    background-color: #b3a100;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.login-form-button.loading {
+    background-color: #b3a100;
+    cursor: not-allowed;
+}
+
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #fff;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 12px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.login-form-button:not(:disabled):not(.loading) {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.form-text-button-group {
+    margin-top: 30px;
+}
+
+.login-to-signup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
+
+.login-label {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.login-create-account {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.login-create-account:hover {
+    color: #E5A000;
+}
+
+.login-create-account:focus {
+    outline: none;
+    color: #E5A000;
+}
+
+.login-create-account::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #E5A000;
+    transition: width 0.3s ease;
+}
+
+.login-create-account:hover::after {
+    width: 100%;
+}
+
+.login-forgot-password {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+    margin-top: 10px;
+}
+
+.login-forgot-password:hover {
+    color: #E5A000;
+}
+
+.login-forgot-password:focus {
+    outline: none;
+    color: #E5A000;
+}
+
+.login-forgot-password::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #E5A000;
+    transition: width 0.3s ease;
+}
+
+.login-forgot-password:hover::after {
+    width: 100%;
+}
+
+.form-error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+

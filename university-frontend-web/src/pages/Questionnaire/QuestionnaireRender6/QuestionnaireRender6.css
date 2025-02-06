@@ -1,0 +1,25 @@
+.Questionnaire-textarea {
+    width: 672px;
+    height: 109px;
+    border-radius: 16px;
+    background-color: #D9D9D942;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    resize: none;
+    padding: 9px 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Questionnaire-textarea:focus {
+    outline: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);  /* Lighter background for focus */
+}
+
+.Questionnaire-textarea:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);  /* Light grey background for hover effect */
+}

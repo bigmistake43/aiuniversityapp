@@ -1,0 +1,14 @@
+/* Style for the disabled button */
+.Questionnaire-button.disabled,
+.Questionnaire-button:disabled {
+    background-color: #d3d3d3;
+    border: #d3d3d3;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+/* Ensure disabled buttons cannot be clicked */
+.Questionnaire-button:disabled {
+    pointer-events: none;
+    /* Prevent any click events */
+}

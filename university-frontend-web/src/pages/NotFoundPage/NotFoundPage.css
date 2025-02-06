@@ -1,0 +1,96 @@
+/* Main Container */
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Logo */
+.not-found-container img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    animation: bounce 1.5s infinite ease-in-out;
+    /* Add subtle animation */
+}
+
+/* Big Text */
+.notfound-big-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff6f61;
+    /* Warm, engaging color */
+    margin-bottom: 30px;
+}
+
+/* Small Text */
+.notfound-small-text {
+    font-size: 1.2rem;
+    color: #6c757d;
+    /* Subtle gray for secondary text */
+    margin-bottom: 30px;
+}
+
+/* Link Button */
+.home-link {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    /* Primary blue */
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.home-link:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5);
+    transform: scale(1.05);
+    /* Slight zoom effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .notfound-big-text {
+        font-size: 1.5rem;
+    }
+
+    .notfound-small-text {
+        font-size: 1rem;
+    }
+
+    .home-link {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Bounce Animation for Image */
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}

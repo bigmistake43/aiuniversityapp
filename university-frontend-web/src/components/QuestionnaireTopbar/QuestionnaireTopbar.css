@@ -1,0 +1,16 @@
+.topbar {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
+.flex-row-right-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 76px;
+    gap: 29px;
+}

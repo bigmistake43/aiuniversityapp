@@ -1,0 +1,69 @@
+.flex-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Questionnaire-text1 {
+    width: auto;
+    height: auto;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.Questionnaire-button-group {
+    width: 529px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 171px;
+    border: none;
+}
+
+.button-yellow {
+    background-color: #E5A000;
+    color: #F5F5F5;
+    border-color: #E5A000;
+}
+
+.button-yellow:hover {
+    background-color: #85827b;
+    border-color: #85827b;
+    box-shadow: 0 4px 8px rgb(216, 219, 27);
+    transform: scale(1.05);
+    color: rgb(216, 219, 27);
+}
+
+.questionnaire-question-rect {
+    width: 754px;
+    padding: 24px;
+    height: auto;
+    border: solid 2px #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 48px;
+    border-radius: 8px;
+}
+
+.questionnaire-question-text {
+    text-align: left;
+    font-size: 29px;
+    font-weight: 600px;
+}
+
+.Questionnaire-input {
+    background-color: #000000;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ffffff;
+    width: 355px;
+    color: #ffffff;
+    padding: 5px;
+    font-size: 20px;
+    margin-left: 10px;
+}

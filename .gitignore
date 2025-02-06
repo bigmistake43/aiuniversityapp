@@ -1,0 +1,10 @@
+/venv/
+# Ignore compiled Python files
+**/__pycache__/
+**/*.pyc
+
+# Ignore the SQLite database file
+/backend/db.sqlite3
+
+# Ignore uploaded media files
+/backend/media/

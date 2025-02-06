@@ -1,0 +1,131 @@
+.show_university_facsheet_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container for the whole page */
+.fact-sheet-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 90%;
+    overflow: auto;
+}
+
+/* University name styling */
+.university-name {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+/* Styling for the fact sheet table */
+.fact-sheet-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Table header styling */
+.fact-sheet-table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.fact-sheet-table th {
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Table body styling */
+.fact-sheet-table tbody {
+    background-color: #ffffff;
+}
+
+.fact-sheet-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1rem;
+}
+
+/* Add hover effect for rows */
+.fact-row:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Column styles */
+.fact-column {
+    font-weight: 600;
+    color: #333;
+}
+
+.details-column {
+    font-style: italic;
+    color: #555;
+}
+
+/* Add responsive design */
+@media screen and (max-width: 768px) {
+    .fact-sheet-table th,
+    .fact-sheet-table td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .university-name {
+        font-size: 2rem;
+    }
+}
+
+.show_university_facsheet_container {
+    padding: 20px;
+}
+
+.fact-sheet-container {
+    font-family: Arial, sans-serif;
+}
+
+.university-name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.fact-sheet-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.download-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.download-pdf {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-pdf:hover {
+    background-color: #0056b3;
+}

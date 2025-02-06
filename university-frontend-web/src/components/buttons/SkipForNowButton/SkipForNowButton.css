@@ -1,0 +1,23 @@
+.Questionnaire-button {
+    width: 161px;
+    height: 47px;
+    font-size: 17
+    px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    user-select: none;
+}
+
+.button-grey {
+    background-color: #434343;
+    color: #F5F5F5;
+}
+
+.button-grey:hover {
+    background-color: #85827b;
+    box-shadow: 0 4px 8px rgb(216, 219, 27);
+    transform: scale(1.05);
+    color: rgb(216, 219, 27);
+}
